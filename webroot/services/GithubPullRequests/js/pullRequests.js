@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 	$.ajax({
 		// Get all projects from the TYPO3-Documentation user
-		url: 'https://api.github.com/users/TYPO3-Documentation/repos',
+		url: 'https://api.github.com/users/TYPO3-Documentation/repos?per_page=9999',
 		success: function(data, status, xhr) {
 			// Prepare values for the loading indicator (set at 10% by default)
 			var progress = 10;
