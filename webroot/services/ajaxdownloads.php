@@ -15,10 +15,17 @@ class PdfMatcher
      * @var boolean TRUE, if the current page is a glue page, false otherwise
      */
     protected $currentProjectIsGluePage = false;
+
     /**
      * @var string URL to the PDF file
      */
     protected $pdfUrl = '';
+
+    /**
+     * @var string URL to the _buildinfo folder
+     */
+    protected $buildinfoUrl = '';
+
     /**
      * @var string URL to the page with docs on how to set up rendering.
      * Do not change unless the page is moved accordingly!
@@ -49,6 +56,10 @@ class PdfMatcher
 
     /** @var boolean Information, whether the PDF file exists or not */
     protected $pdfExists = true;
+
+    /** @var boolean Information, whether the the _buildinfo folderexists or not */
+    protected $buildinfoExists = false;
+
     /** @var string The resulting HTML code of the link */
     protected $htmlResult = '';
 
@@ -224,7 +235,18 @@ class PdfMatcher
         // Explicitly add "stable" here; if called externally, a redirect in
         // .htaccess would do that, but not for the internal check we are doing here
         $pdfAbsoluteFolderPath .= strlen($this->versionPath) ? '/' . $this->versionPath : '/stable';    // '4.7'
+
+        // let's simply steal the intermediate value for pdf
+        $buildinfoAbsoluteFolderPath = $pdfAbsoluteFolderPath . '/_buildinfo';
+        $this->buildinfoExists = is_dir($buildinfoAbsoluteFolderPath);
+        if ($this->buildinfoExists) {
+            $this->buildinfoUrl = str_replace($this->webRootPath, $this->urlPart1,
+                $buildinfoAbsoluteFolderPath) . '/';
+        }
+        # now the final twist for pdf
         $pdfAbsoluteFolderPath .= '/_pdf/';
+
+
 
         // Check whether there is a .pdf file in that folder.
         /** @var mixed Array with the absolute path of the PDF file or an empty array if no matching file was found or FALSE in case of error */
@@ -255,13 +277,16 @@ class PdfMatcher
         $NL = "\n";
         $result = $NL;
         if ($this->pdfExists) {
-            $result .= ' <dd><a href="' . $this->pdfUrl . '" target="_blank">PDF</a></dd>' . $NL;
+            $result .= ' <dd class="related-link-pdf"><a href="' . $this->pdfUrl . '" target="_blank">PDF</a></dd>' . $NL;
         } else {
             $result .= '<dd class="nolink">(PDF)</dd>' . $NL;
             // Show link to howto only in manuals, not on "glue pages".
-            if (!$this->currentProjectIsGluePage) {
-                $result .= '<dd><a href="' . $this->pdfDocumentationUrl . '" target="_blank">No PDF? What can be done?</dd>' . $NL;
-            }
+            // if (!$this->currentProjectIsGluePage) {
+            //     $result .= '<dd><a href="' . $this->pdfDocumentationUrl . '" target="_blank">No PDF? What can be done?</dd>' . $NL;
+            // }
+        }
+        if ($this->buildinfoExists) {
+            $result .= ' <dd class="related-link-buildinfo"><a href="' . $this->buildinfoUrl . '" target="_blank">BUILDINFO</a></dd>' . $NL;
         }
         return $result;
     }
