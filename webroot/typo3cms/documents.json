@@ -115,7 +115,7 @@
     "title": "TYPO3 CMS Services",
     "type": "Reference",
     "shortcut": "t3services",
-    "key": "typo3cms.references.t3service",
+    "key": "typo3cms.references.t3services",
     "url": "https://docs.typo3.org/typo3cms/Typo3ServicesReference/",
     "git": "https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-Typo3Services.git"
   },
