@@ -50,6 +50,8 @@ $kp['Documentation/TYPO3/Reference/CodingGuidelines']         ['4-7']    = '.git
 $kp['Documentation/TYPO3/Reference/CodingGuidelines']         ['6-0']    = '.git.make_6.0';
 $kp['Documentation/TYPO3/Reference/CodingGuidelines']         ['6-1']    = '.git.make_6.1';
 $kp['Documentation/TYPO3/Reference/CodingGuidelines']         ['6-2']    = '.git.make_6.2';
+$kp['Documentation/TYPO3/Reference/CodingGuidelines']         ['7-6']    = '.git.make_7.6';
+$kp['Documentation/TYPO3/Reference/CodingGuidelines']         ['8-7']    = '.git.make_8.7';
 $kp['Documentation/TYPO3/Reference/CoreApi']                  ['master']           = '.git.make';
 $kp['Documentation/TYPO3/Reference/CoreApi']                  ['4-5']              = '.git.make_4.5';
 $kp['Documentation/TYPO3/Reference/CoreApi']                  ['4-6']              = '.git.make_4.6';
@@ -57,6 +59,8 @@ $kp['Documentation/TYPO3/Reference/CoreApi']                  ['4-7']           
 $kp['Documentation/TYPO3/Reference/CoreApi']                  ['6-0']              = '.git.make_6.0';
 $kp['Documentation/TYPO3/Reference/CoreApi']                  ['6-1']              = '.git.make_6.1';
 $kp['Documentation/TYPO3/Reference/CoreApi']                  ['6-2']              = '.git.make_6.2';
+$kp['Documentation/TYPO3/Reference/CoreApi']                  ['7-6']              = '.git.make_7.6';
+$kp['Documentation/TYPO3/Reference/CoreApi']                  ['8-7']              = '.git.make_8.7';
 $kp['Documentation/TYPO3/Reference/FileAbstractionLayer']     ['master'] = '.git.make';
 $kp['Documentation/TYPO3/Reference/InsideTypo3']              ['master'] = '.git.make';
 $kp['Documentation/TYPO3/Reference/Skinning']                 ['master'] = '.git.make';
@@ -65,24 +69,33 @@ $kp['Documentation/TYPO3/Reference/Tca']                      ['master'] = '.git
 $kp['Documentation/TYPO3/Reference/Tca']                      ['6.0']    = '.git.make_6.0';
 $kp['Documentation/TYPO3/Reference/Tca']                      ['6-1']    = '.git.make_6.1';
 $kp['Documentation/TYPO3/Reference/Tca']                      ['6-2']    = '.git.make_6.2';
+$kp['Documentation/TYPO3/Reference/Tca']                      ['7-6']    = '.git.make_7.6';
+$kp['Documentation/TYPO3/Reference/Tca']                      ['8-7']    = '.git.make_8.7';
 $kp['Documentation/TYPO3/Reference/Tsconfig']                 ['master'] = '.git.make';
 #kp['Documentation/TYPO3/Reference/Tsconfig']                 ['4-7']    = '.git.make_4.7';
 $kp['Documentation/TYPO3/Reference/Tsconfig']                 ['6-0']    = '.git.make_6.0';
 $kp['Documentation/TYPO3/Reference/Tsconfig']                 ['6-1']    = '.git.make_6.1';
 $kp['Documentation/TYPO3/Reference/Tsconfig']                 ['6-2']    = '.git.make_6.2';
+$kp['Documentation/TYPO3/Reference/Tsconfig']                 ['7-6']    = '.git.make_7.6';
+$kp['Documentation/TYPO3/Reference/Tsconfig']                 ['8-7']    = '.git.make_8.7';
 $kp['Documentation/TYPO3/Reference/Typo3Services']            ['master'] = '.git.make';
 $kp['Documentation/TYPO3/Reference/Typo3Services']            ['4-5']    = '.git.make_4.5';
 $kp['Documentation/TYPO3/Reference/Typo3Services']            ['7-6']    = '.git.make_7.6';
+$kp['Documentation/TYPO3/Reference/Typo3Services']            ['8-7']    = '.git.make_8.7';
 $kp['Documentation/TYPO3/Reference/Typoscript']               ['master'] = '.git.make';
 $kp['Documentation/TYPO3/Reference/Typoscript']               ['4-7']    = '.git.make_4.7';
 $kp['Documentation/TYPO3/Reference/Typoscript']               ['6-0']    = '.git.make_6.0';
 $kp['Documentation/TYPO3/Reference/Typoscript']               ['6-1']    = '.git.make_6.1';
 $kp['Documentation/TYPO3/Reference/Typoscript']               ['6-2']    = '.git.make_6.2';
+$kp['Documentation/TYPO3/Reference/Typoscript']               ['7-6']    = '.git.make_7.6';
+$kp['Documentation/TYPO3/Reference/Typoscript']               ['8-7']    = '.git.make_8.7';
 $kp['Documentation/TYPO3/Reference/TyposcriptSyntax']         ['master'] = '.git.make';
 $kp['Documentation/TYPO3/Reference/TyposcriptSyntax']         ['4-7']    = '.git.make_4.7';
 $kp['Documentation/TYPO3/Reference/TyposcriptSyntax']         ['6-0']    = '.git.make_6.0';
 $kp['Documentation/TYPO3/Reference/TyposcriptSyntax']         ['6-1']    = '.git.make_6.1';
 $kp['Documentation/TYPO3/Reference/TyposcriptSyntax']         ['6-2']    = '.git.make_6.2';
+$kp['Documentation/TYPO3/Reference/TyposcriptSyntax']         ['7-6']    = '.git.make_7.6';
+$kp['Documentation/TYPO3/Reference/TyposcriptSyntax']         ['8-7']    = '.git.make_8.7';
 $kp['Documentation/TYPO3/Tutorial/Editors']                   ['master'] = '.git.make';
 $kp['Documentation/TYPO3/Tutorial/Editors']                   ['6-0']    = '.git.make_6.0';
 $kp['Documentation/TYPO3/Tutorial/GettingStarted']            ['master'] = '.git.make';
@@ -90,12 +103,12 @@ $kp['Documentation/TYPO3/Tutorial/Templating']                ['master'] = '.git
 $kp['Documentation/TYPO3/Tutorial/Typoscript45Minutes']       ['master'] = '.git.make';
 $kp['TYPO3CMS/Extensions/news']                               ['master'] = '.git.make';
 
-$kp['Packages/TYPO3.CMS']       ['TYPO3_4-5'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_4.5/request_rebuild.php';
-$kp['Packages/TYPO3.CMS']       ['TYPO3_4-7'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_4.7/request_rebuild.php';
-$kp['Packages/TYPO3.CMS']       ['TYPO3_6-2'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_6.2/request_rebuild.php';
-$kp['Packages/TYPO3.CMS']       ['TYPO3_7-6'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_7.6/request_rebuild.php';
-$kp['Packages/TYPO3.CMS']       ['TYPO3_8-7'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_8.7/request_rebuild.php';
-$kp['Packages/TYPO3.CMS']       ['master']    = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_latest/request_rebuild.php';
+$kp['Packages/TYPO3.CMS']['TYPO3_4-5'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_4.5/request_rebuild.php';
+$kp['Packages/TYPO3.CMS']['TYPO3_4-7'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_4.7/request_rebuild.php';
+$kp['Packages/TYPO3.CMS']['TYPO3_6-2'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_6.2/request_rebuild.php';
+$kp['Packages/TYPO3.CMS']['TYPO3_7-6'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_7.6/request_rebuild.php';
+$kp['Packages/TYPO3.CMS']['TYPO3_8-7'] = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_8.7/request_rebuild.php';
+$kp['Packages/TYPO3.CMS']['master']    = 'https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions/TYPO3.CMS.ALL-SYSEXT.make_latest/request_rebuild.php';
 
 $requestUrl = '';
 if ($data and ($data['repositoryUrl'] == 'git://git.typo3.org/')) {
@@ -139,4 +152,3 @@ if (1 or $data) {
     fclose($f2);
 }
 
-?>
