@@ -1,4 +1,4 @@
-Options -Indexes
+Options +Indexes
 
 # Fix broken search in the singlehtml versions
 # If searching, bring the user away from the singlehtml
