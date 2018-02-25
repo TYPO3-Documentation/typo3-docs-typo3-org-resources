@@ -64,9 +64,9 @@ $(document).ready(function() {
 										render: function(data, type, row, meta) {
 											var labelClass;
 											if (data == 'open') {
-												labelClass = 'label-danger';
-											} else {
 												labelClass = 'label-success';
+											} else {
+												labelClass = 'label-danger';
 											}
 											return '<span class="label ' + labelClass + '">' + data + '</span>';
 										}
