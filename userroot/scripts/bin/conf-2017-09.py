@@ -2,7 +2,7 @@
 
 # mb, 2015-10-01, 2016-09-14, 2017-07-10
 
-# This file lives at https://github.com/marble/typo3-docs-typo3-org-resources/blob/master/userroot/scripts/bin/conf-2017-09.py
+# This file lives at https://github.com/TYPO3-Documentation/typo3-docs-typo3-org-resources/blob/master/userroot/scripts/bin/conf-2017-09.py
 # Check for a new version!
 
 # 2017-09-12 care about recommonmark. See http://blog.readthedocs.com/adding-markdown-support/
