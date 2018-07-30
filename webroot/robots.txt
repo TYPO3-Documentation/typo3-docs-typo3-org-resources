@@ -2,7 +2,8 @@ User-agent: *
 Disallow: /*.pdf
 Disallow: /*.txt
 Disallow: /*.rst
-Disallow: /typo3cms/drafts/
-Disallow: /~mbless/
-Disallow: /services/
 Disallow: /getthedocs/files/
+Disallow: /services/
+Disallow: /typo3cms/drafts/
+Disallow: /typo3cms/Teams/
+Disallow: /~mbless/
