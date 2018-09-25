@@ -48,7 +48,7 @@ class VersionMatcher {
     protected function isValidVersionFolderName($filename) {
         $isValid = false;
         if (!$isValid) { // named versions
-            if (in_array( $filename, array('latest', 'stable'))) {
+            if (in_array( $filename, array('latest', 'master', 'stable'))) {
                 $isValid = true;
             }
         }
@@ -185,16 +185,16 @@ class VersionMatcher {
 
         // $this->resultVersions[<version>][<locale>] => Array(
         //    [absPathToHtmlFile] => /home/mbless/public_html/TYPO3/extensions/sphinx/fr-fr/1.1.0/Index.html
-        //    [fragment] => 
+        //    [fragment] =>
         //    [urlPart1] => https://docs.typo3.org
         //    [urlPart2] => /typo3cms/extensions/
         //    [baseFolder] => sphinx
         //    [versionFolder] => 1.1.0
-        //    [relativePath] => 
+        //    [relativePath] =>
         //    [baseHtmlFile] => Index.html
         //    [directHtmlFile] => Index.html
         //)
-        
+
         if ($this->cont and count($this->resultVersions)) {
 
             $result = $this->htmlResultIntro;
