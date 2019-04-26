@@ -17,6 +17,7 @@ RewriteBase /
 RewriteCond %{HTTP_HOST}    !^docs\.typo3\.org [NC]
 RewriteRule ^robots\.txt$   /robots-for-srv123.txt [L]
 
+
 # ###
 # Explicitly redirect everything to domain docs.typo3.org
 #
@@ -38,6 +39,7 @@ RewriteRule ^(.*)         https://docs.typo3.org/$1 [L,R=301]
 RewriteCond %{REQUEST_FILENAME} !-f
 #
 ###
+
 RewriteRule  ^typo3cms/Extensions(.*)$ /typo3cms/extensions$1 [R=301,L]
 
 # mb, 2017-06-02: Why did we do this? (mod_speling)
