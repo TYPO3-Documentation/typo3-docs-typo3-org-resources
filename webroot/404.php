@@ -118,6 +118,11 @@ call_user_func(function () {
         '/typo3cms/ExtbaseGuide/Fluid/ViewHelper/Widget/Uri.html' => '/typo3cms/ViewHelperReference/latest/typo3/fluid/latest/Widget/Uri.html',
     // Redirects for TCAReference
         '/typo3cms/TCAReference/ColumnsConfig/Behaviour/AllowLanguageSynchronization.html' => '/typo3cms/TCAReference/search.html?q=AllowLanguageSynchronization&check_keywords=yes&area=default',
+    // Redirects for ext:form
+        '/typo3cms/extensions/form/Concepts/Index.html' => '/typo3cms/extensions/form/I/Concepts/Index.html',
+        '/typo3cms/extensions/form/Config/Index.html' => '/typo3cms/extensions/form/I/Config/Index.html',
+        '/typo3cms/extensions/form/ApiReference/Index.html' => '/typo3cms/extensions/form/I/ApiReference/Index.html',
+        '/typo3cms/extensions/form/FAQ/Index.html' => '/typo3cms/extensions/form/I/FAQ/Index.html',
     );
 
     $url = $_SERVER['REQUEST_URI'];
