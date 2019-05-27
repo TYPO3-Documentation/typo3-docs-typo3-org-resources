@@ -9,7 +9,7 @@ if ($data) {
     $result = 'da war nix' . $NL;
 }
 if (1) {
-	$f2name = "zzzlog-1.txt";
+    $f2name = "zzzlog-1.txt";
     $f2 = fopen($f2name, 'w');
     fwrite($f2, $result);
     fclose($f2);
@@ -127,7 +127,7 @@ if ($data and ($data['repositoryUrl'] == 'git://git.typo3.org/')) {
 
 $cmd = '';
 if (strlen($requestUrl)) {
-    $cmd = 'wget -q -O /dev/null ' . $requestUrl;
+    $cmd = 'wget -q -O /dev/null ' . escapeshellarg($requestUrl);
     exec($cmd);
 }
 
