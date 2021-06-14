@@ -116,7 +116,7 @@ def addLineToFile(f1path, newline, cmpstr=None, mode='remove'):
 
 #            a                                                              b           c                d                             e
 # csvline    GITURL                                                         GITBRANCH   PUBLISH_FOLDER   PUBLISH_PATH                , PUBLISH_BASE'
-# csvline = 'https://github.com/TYPO3-Documentation/TYPO3CMS-Code-Examples, master    ,                , github/TYPO3-Documentation/ , /typo3cms/drafts/'
+# csvline = 'https://github.com/TYPO3-Documentation/t3docs-examples       , master    ,                , github/TYPO3-Documentation/ , /typo3cms/drafts/'
 # csvline = 'https://github.com/dwenzel/t3events                          , develop   ,                , github/dwenzel/             , /typo3cms/drafts/'
 # csvline = 'https://github.com/dwenzel/t3events_reservation              , develop   ,                , github/dwenzel/             , /typo3cms/drafts/'
 # csvline = 'https://github.com/dwenzel/t3events_course                   , master    ,                , github/dwenzel/             , /typo3cms/drafts/'
@@ -131,7 +131,7 @@ csvline = 'https://github.com/dwenzel/t3events_course'
 
 if 0 and 'as example':
     # giturl: no .git at the end!
-    P['GITURL']         = 'https://github.com/TYPO3-Documentation/TYPO3CMS-Code-Examples'
+    P['GITURL']         = 'https://github.com/TYPO3-Documentation/t3docs-examples'
     P['GITBRANCH']      = 'master'
     P['PUBLISH_FOLDER'] = 'CoreCodeExamples'
     P['PUBLISH_PATH']   = 'github/TYPO3-Documentation'
