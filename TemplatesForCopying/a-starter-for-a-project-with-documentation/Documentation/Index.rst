@@ -13,7 +13,7 @@ That is where your documentation starts.
 Simply start writing reStructuredText.
 
 
-:Author:    My Name <my.name@example.local>
+:Author:    My Name <my.name@example.localhost>
 :License:   MIT license
 :Rendered:  |today|
 :Description:
