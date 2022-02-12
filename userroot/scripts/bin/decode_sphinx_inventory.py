@@ -119,7 +119,6 @@ uri2abbrev = {
     '://docs.typo3.org/typo3cms/TyposcriptSyntaxReference' : 't3tssyntax',
 
     # what abbreviations should we use instead of 'api' in the following cases?
-    '://typo3.org/api/typo3cms'             : 't3api', # current stable
     '://api.typo3.org/typo3cms/master/html' : 't3api', # master
     '://api.typo3.org/typo3cms/67/html'     : 't3api76',
     '://api.typo3.org/typo3cms/62/html'     : 't3api62',
